@@ -1,0 +1,10 @@
+#trait1Menu{
+    transform: rotate(45deg);
+    margin: 0;
+
+}
+
+#trait2Menu{
+    transform: rotate(-45deg);margin: 0;
+
+}
