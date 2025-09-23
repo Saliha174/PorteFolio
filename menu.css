@@ -1,6 +1,8 @@
 #trait1Menu{
     transform: rotate(45deg);
+    
     margin: 0;
+    position: absolute;
 
 }
 
@@ -9,25 +11,99 @@
 
 }
 .containerMenu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 5rem;
-    transition: color 0.3s;
-    
+   position: relative;
+   margin: 0 auto;
+   width: 50%;
+   height: 80vh;
+   /* margin-top: 15%; */
    
+
+    
 }
-.bandeau{
-    margin-bottom: 100px;
+
+a:nth-child(1){
+    text-decoration: none;
+    color: white;font-weight: 500;
+    position: absolute;
+    font-size: 6vw;
+    left: 25%;
+    z-index: 1;
+
+}
+a:nth-child(3){
+    text-decoration: none;
+    color: white;font-weight: 500;
+    position: absolute;
+    top: 25%;
+    font-size: 6vw;
+    left: 6%;
+    z-index: 1;
+
+
+}
+a:nth-child(5){
+    text-decoration: none;
+    color: white;font-weight: 500;
+    position: absolute;
+    top: 50%;
+    font-size: 6vw;
+    left: 25%;
+    z-index: 1;
+
+
+
+}
+a:nth-child(7){
+    text-decoration: none;
+    color: white;font-weight: 500;
+    position: absolute;
+    top: 75%;
+    font-size: 6vw;
+    left: 25%;
+    z-index: 1;
+
+
+
+}
+
+.bandeau1,.bandeau3 {
+    width: 55%;
+    height: 12px;
+    background: linear-gradient(90deg,rgba(147, 133, 153, 1) 0%, rgba(36, 13, 13, 1) 50%, rgba(43, 28, 7, 1) 100%);
+    position: absolute;
+  
+}.bandeau2{
+     width: 90%;
+    height: 12px;
+    background: linear-gradient(90deg,rgba(147, 133, 153, 1) 0%, rgba(36, 13, 13, 1) 50%, rgba(43, 28, 7, 1) 100%);
+    position: absolute;
+  
+}
+.bandeau4{
+     width: 60%;
+    height: 12px;
+    background: linear-gradient(90deg,rgba(147, 133, 153, 1) 0%, rgba(36, 13, 13, 1) 50%, rgba(43, 28, 7, 1) 100%);
+    position: absolute;
+}
+.bandeau1{
+top: 3%;left: 20%;
+
+}
+.bandeau2{
+top: 29%;
+
+}
+.bandeau3{
+top: 53%;left: 20%;
+
+}
+.bandeau4{
+top: 78%;left: 20%;
+
 }
 
 
-a:hover {
-    color: rgb(171, 187, 213); 
 
-}
+
+
+

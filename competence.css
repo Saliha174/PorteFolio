@@ -1,0 +1,56 @@
+.containerCompetence{
+    padding: 20px 10px;
+}
+
+p{
+    font-size: .6rem;
+}
+ .point{
+    
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgb(40, 30, 28);
+ }
+
+ .trait1Competence,
+ .trait2Competence,
+ .trait3Competence,
+ .trait4Competence{
+    margin: 0 2px;
+    width: 5vw;
+    height: 2px;
+    background-color: rgb(40, 30, 28);
+ }
+ #html,
+ #css,
+ #js,
+ #php{
+
+    display: flex;
+    align-items: center;
+ }
+.trait1Competence{
+    width: 1vw;
+}
+.trait2Competence{
+    width: 6vw;
+}
+.trait3Competence{
+    width: 9vw;
+}
+.trait4Competence{
+    width: 14vw;
+}
+.html{
+    margin-left: 5vw;
+}
+.css{
+    margin-left: 10vw;
+}
+.js{
+    margin-left: 15vw;
+}
+.php{
+    margin-left: 20vw;
+}
