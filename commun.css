@@ -16,7 +16,7 @@ body {
         }
         
 
-        .logoMenu {
+        .logoAccueil {
             position: absolute;
             top: 6%;
             left: 4%;
@@ -26,7 +26,16 @@ body {
 
 
         }
-        
+            .logoMenu {
+            position: absolute;
+            top: 106%;
+            left: 4%;
+            width: 6vw;
+            height: 10vw;
+            color: white;
+
+
+        }
 
             #trait1,
         #trait3,
