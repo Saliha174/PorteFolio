@@ -2,19 +2,29 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(139, 161, 211, 0.8) transparent;
-  backdrop-filter: blur(5px);
-  display: none;
-  /* z-index: 1; */
+  background: rgba(20, 21, 24, 0.588) ;
+  backdrop-filter: blur(2.5px);
+  display: none; 
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+
+
+}
+.croix{
+
+  width: 100%;
+  height: 100px;
+  position: relative;
 }
 
 #menu.active {
   display: block;
-  z-index: 2;
+
 }
 
 
-.logoMenu {
+.logoCroix {
   position: absolute;
   top: 6%;
   left: 4%;
@@ -27,29 +37,33 @@
 #trait1Menu, #trait2Menu {
   background-color: white;
   width: 100%;
-  height: 7px;
+  height: 3px;
   position: absolute;
-  top: 40px;
+  top: 30px;
 }
 
-#trait1Menu { transform: rotate(45deg); }
-#trait2Menu { transform: rotate(-45deg); }
+#trait1Menu { transform: rotate(45deg);
+transition: 1s; }
+#trait2Menu { transform: rotate(-45deg);
+transition: 1s }
 
 
-.containerMenu {
-  position: relative;
-  margin: 0 auto;
+.textMenu {
+  position: absolute;  
   width: 50%;
   height: 80vh;
+  left: 25%;
+ 
 }
 
-.containerMenu a {
+.textMenu a {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  font-size: 6vw;
+  font-size: 5vw;
   position: absolute;
   z-index: 1;
+  
 }
 
 
@@ -62,10 +76,30 @@ a.propos { top: 75%; left: 25%; }
 .bandeau1, .bandeau2, .bandeau3, .bandeau4 {
   height: 12px;
   position: absolute;
-  background: linear-gradient(90deg, rgba(147,133,153,1) 0%, rgba(36,13,13,1) 50%, rgba(43,28,7,1) 100%);
-}
+  background: linear-gradient(90deg, rgba(147,133,153,1) 0%, rgb(118, 113, 113) 50%, rgb(48, 43, 36) 100%);
+  opacity: .7;
+  animation: translation 1.5s ;
+ 
 
-.bandeau1 { width: 55%; top: 3%; left: 20%; }
-.bandeau2 { width: 90%; top: 29%; }
-.bandeau3 { width: 55%; top: 53%; left: 20%; }
-.bandeau4 { width: 60%; top: 78%; left: 20%; }
+
+  }
+
+.bandeau1 { width: 50%; top: 3%; left: 20%; }
+.bandeau2 { width: 80%; top: 29%; }
+.bandeau3 { width: 50%; top: 53%; left: 20%; }
+.bandeau4 { width: 55%; top: 78%; left: 20%; }
+
+
+
+@keyframes translation{
+   0%{
+    transform:translateX(-300px) ;
+    opacity: 0;
+  }
+
+ 
+  
+  100%{
+    opacity: .7;
+  }
+}

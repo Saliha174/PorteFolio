@@ -1,10 +1,24 @@
+/***************************Accueil************************************* */
 
 
-        .containerAccueil{
+#accueil{
+    height: 100vh;
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    top: 40%;
+    
+    left: 25%;
+    
+}
+
+        /* .containerAccueil{
             width: 100%;
             height: 40vw;
             margin-top: 10vw;
-        }  
+        }   */
         #accueil.littleAccueil{
             transform: scale(0.8);
     
@@ -13,10 +27,8 @@
         .cercle {
             position: absolute;
             opacity: 0.8;
-
             border-radius: 50%;
-            background: linear-gradient( rgb(25, 46, 95) 30%, rgb(171, 187, 213) 90%);
-            
+            background: linear-gradient( rgb(25, 46, 95) 30%, rgb(171, 187, 213) 90%);        
             transform-origin: center;
             animation: expansion 1.8s , flotter 5s ease-in-out infinite;
         }
@@ -135,16 +147,20 @@ h1 {
 
         @keyframes expansion {
             from {
-                top: 50%;
-                left: 50%;
+                top: 40%;
+                left: 45%;
                 
                 opacity: 0;
             }
 
             to {
-                opacity: 1;
+                opacity: 0.8;
             }
         }
+
+        /* **********************Menu************************************* */
+
+        
 
 
 
