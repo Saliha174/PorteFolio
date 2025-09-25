@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="projet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -19,13 +23,35 @@
 
         </header>
 
-        <main>
+
+        <!-- <section class="slides">
             <div class="slide1"></div>
             <div class="slide2"></div>
             <div class="slide3"></div>
-        </main>
+        </section> -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/Boulangerie.png" alt="Boulangerie">
+                    <div class="text"><i class="fa-brands fa-github"></i></div>
+                </div>
+                <div class="swiper-slide"><img src="img\jeux_video.png" alt="jeux video">
+                    <div class="text"></div>
+                </div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
 
     </div>
+    <!----------------------------------- Menu ------------------------------------------->
     <div id="menu">
 
 
@@ -36,7 +62,22 @@
             <a href="propos.html">À propos</a>
         </nav>
     </div>
+
     <script src="menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + "</span>";
+                },
+            },
+        });
+    </script>
 </body>
 
 
