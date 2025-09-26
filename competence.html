@@ -6,77 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="competence.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Competences</title>
 </head>
 
 <body>
 
     <header>
-
+        <div id="voile"></div>
         <div id="menuBtn" class="menu-btn">
             <span></span><span></span><span></span>
         </div>
 
     </header>
-    <div id="competence">
 
-        <main class="containerCompetence">
-            <section id="html">
+    <h2>Compétences</h3>
+        <main id="containerCompetence">
 
-                <div class="point"></div>
-                <div class="trait1Competence"></div>
-                <div class="textHtml">HTML5</div>
-            </section>
-            <p class="html">Sémantique / Formulaires / Audio & Vidéo / API locales (Storage, Géolocation) /
-                Accessibilité
-                (ARIA)
-                / SEO de base </p>
+            <div class="circles">
+                <div class="circle html">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                    <div class="details">Sémantique · Formulaires · SEO</div>
+                </div>
 
-            <section id="css">
-                <div class="point"></div>
-                <div class="trait2Competence"></div>
-                <div class="textCss">CSS3</div>
-            </section>
-            <p class="css"> Sélecteurs / Positionnement / Flexbox / Grid / Variables CSS / Animations & Transitions /
-                Pseudo-classes & Pseudo-éléments / Media Queries (Responsive Design) / Typographie & Webfonts /
-                Backgrounds
-                &
-                Gradients </p>
+                <div class="circle css">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    <div class="details">Flexbox · Grid · Animations</div>
+                </div>
 
-            <section id="js">
-                <div class="point"></div>
-                <div class="trait3Competence"></div>
-                <div class="textJS">JavaScript</div>
-            </section>
-            <p class="js"> Syntaxe de base / Variables / Opérateurs / Structures de contrôle / Fonctions / Tableaux &
-                Objets
-                /
-                Boucles / DOM / Événements / ES6+ (Classes, Modules, Destructuring, Arrow Functions) / JSON / Promises &
-                Async/Await / Fetch API / LocalStorage & SessionStorage / Manipulation du CSS / Formulaires & Validation
-                /
-                Gestion des erreurs </p>
+                <div class="circle js">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JS">
+                    <div class="details">DOM · Fetch · Async</div>
+                </div>
 
-            <section id="php">
-                <div class="point"></div>
-                <div class="trait4Competence"></div>
-                <div class="textPhp">PHP</div>
-            </section>
-            <p class="php">fsdefszefes </p>
+                <div class="circle php">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                    <div class="details">Sessions · DB · Formulaires</div>
+                </div>
+            </div>
 
         </main>
-    </div>
-    <!----------------------------------- Menu ------------------------------------------->
-    <div id="menu">
+
+        <!----------------------------------- Menu ------------------------------------------->
+        <div id="menu">
 
 
-        <nav class="menu">
-            <a href="accueil.html">Accueil</a>
-            <a href="competence.html">Compétences</a>
-            <a href="projet.html">Projets</a>
-            <a href="propos.html">À propos</a>
-        </nav>
-    </div>
-    <script src="menu.js"></script>
+            <nav class="menu">
+                <a href="accueil.html">Accueil</a>
+                <a href="competence.html">Compétences</a>
+                <a href="projet.html">Projets</a>
+                <a href="propos.html">À propos</a>
+            </nav>
+        </div>
+        <script src="menu.js"></script>
 </body>
 
 </html>
