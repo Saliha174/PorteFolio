@@ -15,6 +15,12 @@
           display: flex;
           align-items: center;
         }
+        h2{
+         width: 100%;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 20px;
+}
 
         /* ========== ACCUEIL ========== */
         #accueil {
@@ -178,7 +184,7 @@
     position: fixed;
     top: 15vh;
     left: 0;
-    background: rgba(4, 10, 26, 0.7);
+    background: rgba(1, 4, 13, 0.917);
     display: none;
     height: 85vh;
     width: 100vw;
@@ -274,7 +280,7 @@
   right:0; 
   bottom:0; 
   left:0;
-  background: rgba(4, 10, 26, 0.55); 
+  background: rgba(4, 10, 26, 0.781); 
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px); 
   opacity: 0;
@@ -300,3 +306,19 @@
   /* z-index: 5000; */
    /* déjà dans ton CSS */
 /* } */
+@media (max-width: 425px) {
+     body {
+            
+            font-family: serif;
+            background-image: url("10462.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+           
+        }
+        #accueil{
+            margin: 0 auto;
+            font-size: 10vw;
+        }
+    }
