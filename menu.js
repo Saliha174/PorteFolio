@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menuBtn");
   const accueil = document.getElementById("accueil");
   const menu = document.getElementById("menu");
-  const competence = document.getElementById("containerCompetence");
+  const logo = document.getElementById("logo");
   const projet = document.getElementById("projet");
   const header = document.querySelector("header");
   const voile = document.getElementById("voile");
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     accueil.classList.toggle("littleAccueil");
     voile.classList.toggle("active");
     // competence.classList.toggle("active");
-    competence.classList.toggle("littleCompetence");
+    logo.classList.toggle("petit");
     header.classList.toggle("active");
   });
 });
