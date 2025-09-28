@@ -1,7 +1,7 @@
 #containerCompetence{
   
     width: 80%;
-    height: 40vh;
+    height: 20vh;
     
     /* position: absolute; */
     /* top: 20%; */
@@ -82,7 +82,7 @@
 @media (max-width: 425px) {
   #containerCompetence{
     width: 80%;
-    height: 80vh;
+    height: 60vh;
     flex-direction: column;
     justify-content: flex-start;
     gap: 60px;
